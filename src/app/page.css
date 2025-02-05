@@ -120,5 +120,8 @@ p {
 .home .featured .featured-single p {
     margin-top: 0;
     font-size: 1.4rem;
-
+}
+.home .featured .featured-list .featured-single p {
+    font-size: 1rem;
+    font-weight: 400;
 }
