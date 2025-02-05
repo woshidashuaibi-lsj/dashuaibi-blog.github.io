@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
+ 
 
 import Link from 'next/link';
 import './index.css'
@@ -11,13 +11,13 @@ const Top = ({ params }) => {
         <Link className="navigation-brand" href="/" >主页</Link>
         <ul className="navigation-list" id="navigation-list">
           <li className="navigation-item navigation-menu">
-            <a className="navigation-link" href="/">文章</a>
+            <Link className="navigation-link" href="/">文章</Link>
           </li>
           <li className="navigation-item navigation-menu">
-            <a className="navigation-link" href="/">即兴</a>
+            <Link className="navigation-link" href="/">即兴</Link>
           </li>
           <li className="navigation-item navigation-menu">
-            <a className="navigation-link" href="/">历史文章</a>
+            <Link className="navigation-link" href="/">历史文章</Link>
           </li>
           {/* <li className="navigation-item navigation-menu">
             <a className="navigation-link" href="/guestbook">留言板</a></li>
