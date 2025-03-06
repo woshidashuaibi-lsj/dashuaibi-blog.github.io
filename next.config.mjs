@@ -6,6 +6,8 @@ const nextConfig = {
     images: {
         unoptimized: true, // 静态导出时禁用图片优化
     },
+    // 确保所有资源都使用正确的路径
+    trailingSlash: true,
 };
 
 export default nextConfig;
