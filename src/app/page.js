@@ -50,7 +50,7 @@ const Page = ({ params }) => {
         <div className="avatar">
           <Image
             className='avatar-image'
-            src="./avatar.png"
+            src="/avatar.png"
             alt="avatar"
             width={180}
             height={38}
