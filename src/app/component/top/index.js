@@ -19,6 +19,13 @@ const Top = ({ params }) => {
           <li className="navigation-item navigation-menu">
             <Link className="navigation-link" href="/">历史文章</Link>
           </li>
+          <li className="navigation-item navigation-menu">
+            <Link className="navigation-link" href="/guestbook">留言板</Link>
+          </li>
+          
+          <li className="navigation-item navigation-menu">
+            <Link className="navigation-link" href="/qw-three">趣玩threejs</Link>
+          </li>
           {/* <li className="navigation-item navigation-menu">
             <a className="navigation-link" href="/guestbook">留言板</a></li>
           <li className="navigation-item navigation-menu">
