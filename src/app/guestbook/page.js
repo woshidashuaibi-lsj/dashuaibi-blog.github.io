@@ -50,7 +50,7 @@ function Guestbook() {
     const loader = new GLTFLoader()
     let doorModel;
     loader.load(
-      '/GLTF/scene.gltf',
+      './GLTF/scene.gltf',
       (gltf) => {
         const model1 = gltf.scene;
         // model1.position.set(-5, 0, 0); // 放在左侧
@@ -76,7 +76,7 @@ function Guestbook() {
         // controls.update()
 
         loader.load(
-          '/door/scene.gltf', // 第3个模型路径
+          './door/scene.gltf', // 第3个模型路径
           (gltf) => {
             const model3 = gltf.scene;
             model3.position.set(0, 0, 20); // 往前放（z轴负方向）
