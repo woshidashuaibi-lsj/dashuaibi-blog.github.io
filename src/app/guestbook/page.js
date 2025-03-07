@@ -49,8 +49,12 @@ function Guestbook() {
     // 加载模型
     const loader = new GLTFLoader()
     let doorModel;
+    // 判断是否在生产环境
+    const isProd = process.env.NODE_ENV === 'production';
+    // GitHub Pages 的基础路径
+    const basePath = isProd ? '/dashuaibi-blog.github.io' : '';
     loader.load(
-      '/GLTF/scene.gltf',
+      `${basePath}/GLTF/scene.gltf`,
       (gltf) => {
         const model1 = gltf.scene;
         // model1.position.set(-5, 0, 0); // 放在左侧
@@ -76,7 +80,7 @@ function Guestbook() {
         // controls.update()
 
         loader.load(
-          '/door/scene.gltf', // 第3个模型路径
+          `${basePath}/door/scene.gltf`,// 第3个模型路径
           (gltf) => {
             const model3 = gltf.scene;
             model3.position.set(0, 0, 20); // 往前放（z轴负方向）
