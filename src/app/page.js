@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from "next/image";
 import Top from './component/top/index'
 import './page.css'
+import AvatarImage from './component/avatarImage/index.js';
+
 
 // 如果需要为每个动态路径生成静态参数
 export async function generateStaticParams() {
@@ -44,18 +46,11 @@ const Page = ({ params }) => {
           <h1>卢穗杰</h1>
           <small>百年里，浑教是醉。三万六千场。</small>
           <p></p>
-          <p>带点理想主义的开发者</p>
+          <p>天真的理想主义者</p>
           <p></p>
         </div>
         <div className="avatar">
-          <Image
-            className='avatar-image'
-            src="/avatar.png"
-            alt="avatar"
-            width={180}
-            height={38}
-            priority
-          />
+          <AvatarImage />
         </div>
         </div>
       </div>
